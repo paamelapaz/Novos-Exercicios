@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Nome e peso</h1>
+
+    <p id="resul"></p>
+
+    <script>
+    
+        let eduardo_peso = Number(prompt("Digite o peso do Eduardo"));
+        let gustavo_peso = Number(prompt("Digite o peso do Gustavo"));
+    
+        let msg;
+        
+        if(eduardo_peso >gustavo_peso){
+            msg= "Eduardo tem um percentual de gordura maior do que Gustavo. Seu peso é: " + eduardo_peso
+        }else{
+            msg= "Gustavo tem um percentual de gordura maior do que Eduardo. Seu peso é: " + gustavo_peso
+        }
+        
+
+        document.getElementById("resul").innerHTML = msg;
+        
+
+    </script>
+</body>
+</html>

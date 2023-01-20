@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Nome, nascimento, idade</h1>
+    <p>Nome 1: <span id= "nome_1"></span></p>
+    <p>Ano 1: <span id= "ano_1"></span></p>
+    <p>Nome 2: <span id= "nome_2"></span></p>
+    <p>Ano 2: <span id="ano_2"></span></p>
+    <p>Ano atual: <span id="ano_atual"></span></p>
+    <p>Idade 1: <span id="idade_1"></span></p>
+    <p>Idade 2: <span id="idade_2"></span></p>
+    <p id= "resul"></p>
+
+    <script>
+
+        let Nome_1 = prompt("Digite seu nome");
+        let Ano_1 = Number(prompt("Digite o ano de nascimento"));
+        let Nome_2 = prompt("Digite seu nome");
+        let Ano_2 = Number (prompt("Digite o ano de nascimento"));
+        let Ano_atual = Number (prompt("Digite o ano atual"));
+        let Idade_1 = Number (Ano_atual - Ano_1);
+        let Idade_2 = Number(Ano_atual - Ano_2 );
+        let msg;
+
+        if(Idade_1 < Idade_2){
+            msg = Nome_1 + " É mais novo(a) que: " + Nome_2
+        }else{
+            msg= Nome_2 + " É mais novo(a) que: " + Nome_1
+        }
+
+        document.getElementById("nome_1").innerHTML = Nome_1;
+        document.getElementById("nome_2").innerHTML = Nome_2;
+        document.getElementById("ano_1").innerHTML = Ano_1;
+        document.getElementById("ano_2").innerHTML = Ano_2;
+        document.getElementById("ano_atual").innerHTML = Ano_atual;
+        document.getElementById("idade_1").innerHTML = Idade_1;
+        document.getElementById("idade_2").innerHTML = Idade_2;
+        document.getElementById("resul").innerHTML = msg;
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leia dois números e, em seguida, verifique qual deles é o menor e qual deles é o maior</title>
+</head>
+<body>
+    <h1>maior e menor numero</h1>
+    
+    <div id="resul"></div>
+
+    <script>
+        let numero1=Number(prompt("Digite um numero"));
+        let numero2=Number(prompt("Digite um numero"));
+        let msg; 
+        
+        if (numero1 < numero2){
+        msg = "o menor numero é " + numero1  
+        }else{
+            msg = "o menor numero é " + numero2
+        }
+
+        document.getElementById("resul").innerHTML = msg;
+
+        
+
+
+    </script>
+
+    
+</body>
+</html>
